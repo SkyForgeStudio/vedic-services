@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="../css/matchmaking-calculator.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
     <link rel="stylesheet" href="../css/services.css" />
+    <link rel="stylesheet" href="../css/panchang.css" />
 
     <!-- Header -->
     <head></head>
@@ -28,7 +30,7 @@
                 toward clarity
               </p>
             </div>
-            <!-- Tabs -->
+
             <div class="tabs">
               <button class="tab active" data-tab="all">All</button>
               <button class="tab" data-tab="consultations">
@@ -38,9 +40,8 @@
               <button class="tab" data-tab="kundli">Kundli</button>
               <button class="tab" data-tab="online-puja">Online Puja</button>
             </div>
-            <!-- Services Grid -->
+
             <div class="services-grid" id="servicesGrid">
-              <!-- Card 1 -->
               <div class="service-card" data-category="consultations">
                 <span class="badge">1-on-1</span>
                 <div class="icon-circle">
@@ -214,65 +215,67 @@
               <!-- Left Side -->
               <div class="kundli-info">
                 <div class="kundli-text">
-                  <h2 class="kundli-title">Get Your Free Kundli</h2>
-                  <!--Horizontal Stick And Star Logo-->
-                  <span>
-                    <svg
-                      width="80"
-                      height="24"
-                      viewBox="0 0 80 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <line
-                        x1="0"
-                        y1="12"
-                        x2="28"
-                        y2="12"
-                        stroke="#4A3B32"
-                        stroke-width="2"
-                        stroke-opacity="0.6"
-                      />
-
-                      <g transform="translate(31, 3)">
-                        <path
-                          d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
-                          fill="#D9D9D9"
+                  <div class="kunldi-icon-text">
+                    <h2 class="kundli-title">Get Your Free Kundli</h2>
+                    <!--Horizontal Stick And Star Logo-->
+                    <span class="kundli-title-icon">
+                      <svg
+                        width="80"
+                        height="24"
+                        viewBox="0 0 80 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          x1="0"
+                          y1="12"
+                          x2="28"
+                          y2="12"
+                          stroke="#4A3B32"
+                          stroke-width="2"
+                          stroke-opacity="0.6"
                         />
 
-                        <path
-                          d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
-                          fill="url(#paint0_linear_horizontal)"
+                        <g transform="translate(31, 3)">
+                          <path
+                            d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
+                            fill="#D9D9D9"
+                          />
+
+                          <path
+                            d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
+                            fill="url(#paint0_linear_horizontal)"
+                          />
+                        </g>
+
+                        <line
+                          x1="52"
+                          y1="12"
+                          x2="80"
+                          y2="12"
+                          stroke="#4A3B32"
+                          stroke-width="2"
+                          stroke-opacity="0.6"
                         />
-                      </g>
 
-                      <line
-                        x1="52"
-                        y1="12"
-                        x2="80"
-                        y2="12"
-                        stroke="#4A3B32"
-                        stroke-width="2"
-                        stroke-opacity="0.6"
-                      />
-
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_horizontal"
-                          x1="9.22182"
-                          y1="2.44857"
-                          x2="9.22182"
-                          y2="23.4386"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FF9C1A" />
-                          <stop offset="0.466959" stop-color="#FFAE31" />
-                          <stop offset="0.769638" stop-color="#FFD188" />
-                          <stop offset="1" stop-color="#FFDDAB" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_horizontal"
+                            x1="9.22182"
+                            y1="2.44857"
+                            x2="9.22182"
+                            y2="23.4386"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF9C1A" />
+                            <stop offset="0.466959" stop-color="#FFAE31" />
+                            <stop offset="0.769638" stop-color="#FFD188" />
+                            <stop offset="1" stop-color="#FFDDAB" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
 
                   <p class="kundli-description">
                     Get clear insights into your life, career, relationships and
@@ -407,112 +410,114 @@
         <!-- Today's Panchang -->
 
         <section class="panchang-section">
-  <div class="container">
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-    <link rel="stylesheet" href="../css/utilities.css" />
-    <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/panchang.css" />
-    <div class="panchang-info">
-      <div class="panchang-text">
-        <h1 class="panchang-title">Today’s Panchang</h1>
-        <p class="panchang-subtitle">
-          Visualize the day’s energy. The chart highlights
-          <strong>Rahu Kaal (avoid)</strong> and
-          <strong>Abhijit Muhurat (best time)</strong>.
-        </p>
-        <div class="location-badge">
-          PANCHANG FOR <span id="location-badge-text">Mumbai</span>
-        </div>
-        <div class="status-card">
-          <span class="status-label">CURRENT STATUS</span>
-          <div class="status-content">
-            <div class="status-text">
-              <h2 class="status-title" id="status-title">
-                <img
-                  src="../assets/images/stars.0d69f7e2.svg"
-                  alt="Status Icon"
-                  class="status-icon"
-                />
-                Auspicious (Shubh)
-              </h2>
-              <p class="status-desc" id="status-desc">
-                Good for important activities
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="controls-group">
-          <div class="select-wrapper">
-            <select name="location" class="location-select">
-              <option
-                value="mumbai"
-                data-lat="19.0760"
-                data-lon="72.8777"
-                selected
-              >
-                Mumbai
-              </option>
-              <option value="delhi" data-lat="28.6139" data-lon="77.2090">
-                Delhi
-              </option>
-            </select>
-          </div>
-          <button type="button" id="btn-refresh" class="btn-refresh">
-            <span class="icon-refresh"
-              ><img src="../assets/images/refresh-icon.8b7c5a44.svg" /> </span
-            >Refresh Data
-          </button>
-        </div>
+          <div class="container">
+            <div class="panchang-info">
+              <div class="panchang-text">
+                <h1 class="panchang-title">Today’s Panchang</h1>
+                <p class="panchang-subtitle">
+                  Visualize the day’s energy. The chart highlights
+                  <strong>Rahu Kaal (avoid)</strong> and
+                  <strong>Abhijit Muhurat (best time)</strong>.
+                </p>
+                <div class="location-badge">
+                  PANCHANG FOR <span id="location-badge-text">Mumbai</span>
+                </div>
+                <div class="status-card">
+                  <span class="status-label">CURRENT STATUS</span>
+                  <div class="status-content">
+                    <div class="status-text">
+                      <h2 class="status-title" id="status-title">
+                        <img
+                          src="../assets/images/stars.0d69f7e2.svg"
+                          alt="Status Icon"
+                          class="status-icon"
+                        />
+                        Auspicious (Shubh)
+                      </h2>
+                      <p class="status-desc" id="status-desc">
+                        Good for important activities
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="controls-group">
+                  <div class="select-wrapper">
+                    <select name="location" class="location-select">
+                      <option
+                        value="mumbai"
+                        data-lat="19.0760"
+                        data-lon="72.8777"
+                        selected
+                      >
+                        Mumbai
+                      </option>
+                      <option
+                        value="delhi"
+                        data-lat="28.6139"
+                        data-lon="77.2090"
+                      >
+                        Delhi
+                      </option>
+                    </select>
+                  </div>
+                  <button type="button" id="btn-refresh" class="btn-refresh">
+                    <span class="icon-refresh"
+                      ><img
+                        src="../assets/images/refresh-icon.8b7c5a44.svg"
+                      /> </span
+                    >Refresh Data
+                  </button>
+                </div>
 
-        <button type="button" id="btn-view-more" class="btn-view-more">
-          View more
-        </button>
-      </div>
+                <button type="button" id="btn-view-more" class="btn-view-more">
+                  View more
+                </button>
+              </div>
 
-      <div class="chart-info">
-        <div class="chart-card">
-          <div class="chart-wrapper">
-            <div class="donut-chart" id="donut-chart">
-              <div class="chart-center-text">
-                <span class="label-now">NOW IN</span>
-                <span class="location-name" id="chart-location-text"
-                  >Mumbai</span
-                >
+              <div class="chart-info">
+                <div class="chart-card">
+                  <div class="chart-wrapper">
+                    <div class="donut-chart" id="donut-chart">
+                      <div class="chart-center-text">
+                        <span class="label-now">NOW IN</span>
+                        <span class="location-name" id="chart-location-text"
+                          >Mumbai</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <ul class="chart-legend">
+                    <li class="legend-item">
+                      <span class="dot dot-daytime"></span>
+                      <span class="legend-text" id="legend-daytime"
+                        >Day Time (54%)</span
+                      >
+                    </li>
+                    <li class="legend-item">
+                      <span class="dot dot-nighttime"></span>
+                      <span class="legend-text" id="legend-nighttime"
+                        >Night Time (46%)</span
+                      >
+                    </li>
+                    <li class="legend-item">
+                      <span class="dot dot-rahukaal"></span>
+                      <span class="legend-text" id="legend-rahukaal"
+                        >Rahu Kaal (7%)</span
+                      >
+                    </li>
+                    <li class="legend-item">
+                      <span class="dot dot-abhijit"></span>
+                      <span class="legend-text" id="legend-abhijit"
+                        >Abhijit (4%)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-
-          <ul class="chart-legend">
-            <li class="legend-item">
-              <span class="dot dot-daytime"></span>
-              <span class="legend-text" id="legend-daytime"
-                >Day Time (54%)</span
-              >
-            </li>
-            <li class="legend-item">
-              <span class="dot dot-nighttime"></span>
-              <span class="legend-text" id="legend-nighttime"
-                >Night Time (46%)</span
-              >
-            </li>
-            <li class="legend-item">
-              <span class="dot dot-rahukaal"></span>
-              <span class="legend-text" id="legend-rahukaal"
-                >Rahu Kaal (7%)</span
-              >
-            </li>
-            <li class="legend-item">
-              <span class="dot dot-abhijit"></span>
-              <span class="legend-text" id="legend-abhijit">Abhijit (4%)</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+        </section>
 
         <!-- Matchmaking Calculator -->
 
@@ -522,66 +527,69 @@
               <!-- Left Side -->
               <div class="kundli-info">
                 <div class="kundli-text">
-                  <h2 class="kundli-title">Free Kundli Matching Calculator</h2>
-                  <!--Horizontal Stick And Star Logo-->
-                  <span>
-                    <svg
-                      width="80"
-                      height="24"
-                      viewBox="0 0 80 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <line
-                        x1="0"
-                        y1="12"
-                        x2="28"
-                        y2="12"
-                        stroke="#4A3B32"
-                        stroke-width="2"
-                        stroke-opacity="0.6"
-                      />
-
-                      <g transform="translate(31, 3)">
-                        <path
-                          d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
-                          fill="#D9D9D9"
+                  <div class="kunldi-icon-text">
+                    <h2 class="kundli-title">
+                      Free Kundli Matching Calculator
+                    </h2>
+                    <!--Horizontal Stick And Star Logo-->
+                    <span>
+                      <svg
+                        width="80"
+                        height="24"
+                        viewBox="0 0 80 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          x1="0"
+                          y1="12"
+                          x2="28"
+                          y2="12"
+                          stroke="#4A3B32"
+                          stroke-width="2"
+                          stroke-opacity="0.6"
                         />
 
-                        <path
-                          d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
-                          fill="url(#paint0_linear_horizontal)"
+                        <g transform="translate(31, 3)">
+                          <path
+                            d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
+                            fill="#D9D9D9"
+                          />
+
+                          <path
+                            d="M9.22182 0.5L12.4887 5.80459L17.7932 9.07143L12.4887 12.3383L9.22182 17.6429L5.95499 12.3383L0.650391 9.07143L5.95499 5.80459L9.22182 0.5Z"
+                            fill="url(#paint0_linear_horizontal)"
+                          />
+                        </g>
+
+                        <line
+                          x1="52"
+                          y1="12"
+                          x2="80"
+                          y2="12"
+                          stroke="#4A3B32"
+                          stroke-width="2"
+                          stroke-opacity="0.6"
                         />
-                      </g>
 
-                      <line
-                        x1="52"
-                        y1="12"
-                        x2="80"
-                        y2="12"
-                        stroke="#4A3B32"
-                        stroke-width="2"
-                        stroke-opacity="0.6"
-                      />
-
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_horizontal"
-                          x1="9.22182"
-                          y1="2.44857"
-                          x2="9.22182"
-                          y2="23.4386"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stop-color="#FF9C1A" />
-                          <stop offset="0.466959" stop-color="#FFAE31" />
-                          <stop offset="0.769638" stop-color="#FFD188" />
-                          <stop offset="1" stop-color="#FFDDAB" />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </span>
-
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_horizontal"
+                            x1="9.22182"
+                            y1="2.44857"
+                            x2="9.22182"
+                            y2="23.4386"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#FF9C1A" />
+                            <stop offset="0.466959" stop-color="#FFAE31" />
+                            <stop offset="0.769638" stop-color="#FFD188" />
+                            <stop offset="1" stop-color="#FFDDAB" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </span>
+                  </div>
                   <p class="kundli-description">
                     Check your marriage compatibility instantly with accurate
                     Guna Milan and detailed relationship insights.

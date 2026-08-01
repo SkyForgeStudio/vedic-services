@@ -151,11 +151,11 @@ body {
 
 .btn-view-more {
     align-self: flex-start;
-    background-color: #ffffff;
+    background-color: #e6893d83;
 }
 
 .btn-view-more:hover {
-    background-color: #f5f5f5;
+    background-color: #f0983486;
 }
 
 
@@ -260,7 +260,7 @@ body {
         width: 100%;
     }
 
-    .panchang-section .container {
+    .panchang-section {
         display: flex;
         flex-direction: row;
         align-items: stretch;
