@@ -174,3 +174,37 @@
         padding: 14px;
     }
 }
+
+
+/* Today's Panchang Section */
+
+@media (min-width: 768px) {
+    .panchang-section {
+        width: 100%;
+    }
+
+    .panchang-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 2.5rem;
+        width: 100%;
+    }
+
+    .panchang-text {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .chart-info {
+        flex: 1;
+        display: flex;
+    }
+
+    .select-wrapper {
+        width: auto;
+    }
+}

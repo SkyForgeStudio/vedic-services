@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vedic Services</title>
 
-    <link rel="stylesheet" href="../css/base.css" />
-    <link rel="stylesheet" href="../css/kundli-calculator.css" />
-    <link rel="stylesheet" href="../css/matchmaking-calculator.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-    <link rel="stylesheet" href="../css/utilities.css" />
-    <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/services.css" />
-    <link rel="stylesheet" href="../css/panchang.css" />
+<link rel="stylesheet" href="../css/variables.css" />
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/utilities.css" />
+<link rel="stylesheet" href="../css/kundli-calculator.css" />
+<link rel="stylesheet" href="../css/matchmaking-calculator.css" />
+<link rel="stylesheet" href="../css/services.css" />
+<link rel="stylesheet" href="../css/panchang.css" />
+<link rel="stylesheet" href="../css/responsive.css" />
 
     <!-- Header -->
     <head></head>
@@ -295,7 +295,7 @@
                     <form class="kundli-form">
                       <div class="form-grid">
                         <div class="input-group">
-                          <label for="name" class="form-label">Name:</label>
+                          <label for="name" class="form-label">Name</label>
 
                           <input
                             type="text"
@@ -308,7 +308,7 @@
                         </div>
 
                         <div class="input-group">
-                          <label for="phone" class="form-label">Phone:</label>
+                          <label for="phone" class="form-label">Phone</label>
 
                           <input
                             type="tel"
@@ -321,7 +321,7 @@
                         </div>
 
                         <div class="input-group">
-                          <label for="email" class="form-label">Email:</label>
+                          <label for="email" class="form-label">Email</label>
 
                           <input
                             type="email"
@@ -335,7 +335,7 @@
 
                         <div class="input-group">
                           <label for="birthDate" class="form-label"
-                            >Date Of Birth:</label
+                            >Date Of Birth</label
                           >
 
                           <input
@@ -348,7 +348,7 @@
 
                         <div class="input-group">
                           <label for="birthTime" class="form-label"
-                            >Time Of Birth:</label
+                            >Time Of Birth</label
                           >
 
                           <input
@@ -409,119 +409,108 @@
 
         <!-- Today's Panchang -->
 
-        <section class="panchang-section">
-          <div class="container">
-            <div class="panchang-info">
-              <div class="panchang-text">
-                <h1 class="panchang-title">Today’s Panchang</h1>
-                <p class="panchang-subtitle">
-                  Visualize the day’s energy. The chart highlights
-                  <strong>Rahu Kaal (avoid)</strong> and
-                  <strong>Abhijit Muhurat (best time)</strong>.
-                </p>
-                <div class="location-badge">
-                  PANCHANG FOR <span id="location-badge-text">Mumbai</span>
-                </div>
-                <div class="status-card">
-                  <span class="status-label">CURRENT STATUS</span>
-                  <div class="status-content">
-                    <div class="status-text">
-                      <h2 class="status-title" id="status-title">
-                        <img
-                          src="../assets/images/stars.0d69f7e2.svg"
-                          alt="Status Icon"
-                          class="status-icon"
-                        />
-                        Auspicious (Shubh)
-                      </h2>
-                      <p class="status-desc" id="status-desc">
-                        Good for important activities
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="controls-group">
-                  <div class="select-wrapper">
-                    <select name="location" class="location-select">
-                      <option
-                        value="mumbai"
-                        data-lat="19.0760"
-                        data-lon="72.8777"
-                        selected
-                      >
-                        Mumbai
-                      </option>
-                      <option
-                        value="delhi"
-                        data-lat="28.6139"
-                        data-lon="77.2090"
-                      >
-                        Delhi
-                      </option>
-                    </select>
-                  </div>
-                  <button type="button" id="btn-refresh" class="btn-refresh">
-                    <span class="icon-refresh"
-                      ><img
-                        src="../assets/images/refresh-icon.8b7c5a44.svg"
-                      /> </span
-                    >Refresh Data
-                  </button>
-                </div>
+      <section class="panchang-section">
+  <div class="container">
+    <div class="panchang-info">
+      <div class="panchang-text">
+        <h2 class="panchang-title">Today’s Panchang</h2>
+        <p class="panchang-subtitle">
+          Visualize the day’s energy. The chart highlights
+          <strong>Rahu Kaal (avoid)</strong> and
+          <strong>Abhijit Muhurat (best time)</strong>.
+        </p>
 
-                <button type="button" id="btn-view-more" class="btn-view-more">
-                  View more
-                </button>
-              </div>
+        <div class="location-badge">
+          PANCHANG FOR <span id="location-badge-text">Mumbai</span>
+        </div>
 
-              <div class="chart-info">
-                <div class="chart-card">
-                  <div class="chart-wrapper">
-                    <div class="donut-chart" id="donut-chart">
-                      <div class="chart-center-text">
-                        <span class="label-now">NOW IN</span>
-                        <span class="location-name" id="chart-location-text"
-                          >Mumbai</span
-                        >
-                      </div>
-                    </div>
-                  </div>
+        <div class="status-card">
+          <span class="status-label">CURRENT STATUS</span>
+          <div class="status-content">
+            <div class="status-text">
+              <h3 class="status-title" id="status-title">
+                <img
+                  src="../assets/images/stars.0d69f7e2.svg"
+                  alt=""
+                  class="status-icon"
+                />
+                Auspicious (Shubh)
+              </h3>
+              <p class="status-desc" id="status-desc">
+                Good for important activities
+              </p>
+            </div>
+          </div>
+        </div>
 
-                  <ul class="chart-legend">
-                    <li class="legend-item">
-                      <span class="dot dot-daytime"></span>
-                      <span class="legend-text" id="legend-daytime"
-                        >Day Time (54%)</span
-                      >
-                    </li>
-                    <li class="legend-item">
-                      <span class="dot dot-nighttime"></span>
-                      <span class="legend-text" id="legend-nighttime"
-                        >Night Time (46%)</span
-                      >
-                    </li>
-                    <li class="legend-item">
-                      <span class="dot dot-rahukaal"></span>
-                      <span class="legend-text" id="legend-rahukaal"
-                        >Rahu Kaal (7%)</span
-                      >
-                    </li>
-                    <li class="legend-item">
-                      <span class="dot dot-abhijit"></span>
-                      <span class="legend-text" id="legend-abhijit"
-                        >Abhijit (4%)</span
-                      >
-                    </li>
-                  </ul>
-                </div>
+        <div class="controls-group">
+          <div class="select-wrapper">
+            <label for="panchang-location-select" class="sr-only">Select Location</label>
+            <select id="panchang-location-select" name="location" class="location-select">
+              <option
+                value="mumbai"
+                data-lat="19.0760"
+                data-lon="72.8777"
+                selected
+              >
+                Mumbai
+              </option>
+              <option value="delhi" data-lat="28.6139" data-lon="77.2090">
+                Delhi
+              </option>
+            </select>
+          </div>
+          <button type="button" id="btn-refresh" class="btn-refresh">
+            <span class="icon-refresh">
+              <img src="../assets/images/refresh-icon.8b7c5a44.svg" alt="" />
+            </span>
+            Refresh Data
+          </button>
+        </div>
+
+        <button type="button" id="btn-view-more" class="btn-view-more">
+          View more
+        </button>
+      </div>
+
+      <div class="chart-info">
+        <div class="chart-card">
+          <div class="chart-wrapper">
+            <div class="donut-chart" id="donut-chart">
+              <div class="chart-center-text">
+                <span class="label-now">NOW IN</span>
+                <span class="location-name" id="chart-location-text">Mumbai</span>
               </div>
             </div>
           </div>
-        </section>
+
+          <ul class="chart-legend">
+            <li class="legend-item">
+              <span class="dot dot-daytime"></span>
+              <span class="legend-text" id="legend-daytime">Day Time (54%)</span>
+            </li>
+            <li class="legend-item">
+              <span class="dot dot-nighttime"></span>
+              <span class="legend-text" id="legend-nighttime">Night Time (46%)</span>
+            </li>
+            <li class="legend-item">
+              <span class="dot dot-rahukaal"></span>
+              <span class="legend-text" id="legend-rahukaal">Rahu Kaal (7%)</span>
+            </li>
+            <li class="legend-item">
+              <span class="dot dot-abhijit"></span>
+              <span class="legend-text" id="legend-abhijit">Abhijit (4%)</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <!-- Matchmaking Calculator -->
 
-        <section class="kundli-section">
+        <section class="kundli-match-section">
           <div class="container">
             <div class="kundli-content">
               <!-- Left Side -->
@@ -602,7 +591,7 @@
                 <div class="kundli-form-area notched-card-body">
                   <div class="kundli-card">
                     <div class="kundli-card-title">
-                      <h2 class="form-title">Kundli Calculator</h2>
+                      <h2 class="form-title">MatchMaking Calculator</h2>
                     </div>
 
                     <form class="matchmaking-form">
