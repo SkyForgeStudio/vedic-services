@@ -1,5 +1,19 @@
 :root {
+    --primary-text: #65250c;
     --accent-color: #d98d22;
     --card-bg: #ffefd6;
-    --primary-text: #65250c;
+    --success-color: #166534;
+    --border-color: #d4af37;
+    --color-primary: rgb(101, 37, 12);
+    --color-success: rgb(22, 101, 52);
+    --color-bg-card: #fff9e6;
+    --color-border-card: #d4af37;
+    --color-badge-bg: #e2c08d;
+    --color-btn-refresh: rgb(243, 215, 165);
+    --font-heading: 'FHTotalDisplay', sans-serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
+    --font-heading: 'FHTotalDisplay', sans-serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
+    --radius-sm: 4px;
+    --radius-md: 8px;
 }
