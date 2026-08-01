@@ -1,0 +1,209 @@
+
+.kundli-section {
+   width: 100%;
+   padding: 80px 0;
+   background-image: url("../assets/images/calculator-bg-image.e2794f17.svg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+@font-face {
+   font-family: 'FHTotalDisplay';
+   src: url("../assets/fonts/FHTotalDisplay-Test-Regular-BF6514dd5b34b98.woff") format('woff');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Be Vietnam Pro';
+   src: url('https://fonts.gstatic.com/s/bevietnampro/v12/QdVNSTAyLFyeg_IDWvOJmVES_HRUNXgSYA.woff2') format('woff2');
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+.container {
+   width: 90%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+
+
+.kundli-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 60px;
+}
+
+.kundli-info {
+   flex: 1;
+}
+
+.kundli-card {
+   flex: 1;
+   background: #ffefd6;
+   position: relative;
+}
+
+.kundli-form-area {
+   border: 2px solid #d98d22;
+   padding: 50px;
+}
+
+.form-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   gap: 30px 45px;
+}
+
+.kundli-card-title{
+   margin:auto;
+   text-align:center;
+   margin-bottom:40px;
+}
+
+.kundli-title {  
+   font-family: 'FHTotalDisplay', sans-serif;
+   font-size: 30px;
+   font-weight: 600;
+   color: #ffffff;
+}
+
+.kundli-description {
+   font-size: 16px;
+   line-height: 1.8;
+   color: #ffffff;
+   max-width: 500px;
+}
+
+
+
+.kundali-card-title {
+   margin-bottom: 40px;
+}
+
+.form-title {
+   font-family: 'FHTotalDisplay', sans-serif;
+   color: #65250c;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+
+
+.kundli-form {
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.form-grid {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 45px;
+   row-gap: 30px;
+}
+
+.input-group {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+
+.form-label {
+   font-family: 'Be Vietnam Pro', sans-serif;
+   font-size: 18px;
+   font-weight: 600;
+   color: #65250c;
+}
+
+
+.input-group input,
+.input-group select {
+   width: 100%;
+   padding: 10px 0;
+   background: transparent;
+   border: none;
+   border-bottom: 2px solid #8d5b22;
+   outline: none;
+   font-size: 18px;
+   color: #222;
+}
+
+.input-group input::placeholder {
+   color: #9b8b7b;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+   border-bottom-color: #d98d22;
+}
+
+/* Auto Complete */
+
+.autocomplete {
+   position: relative;
+}
+
+.suggestions {
+   position: absolute;
+   top: 100%;
+   left: 0;
+
+   width: 100%;
+
+   list-style: none;
+
+   background: white;
+
+   border: 1px solid #ddd;
+
+   max-height: 220px;
+
+   overflow-y: auto;
+
+   display: none;
+
+   z-index: 100;
+}
+
+.suggestions li {
+   padding: 12px;
+   cursor: pointer;
+}
+
+.suggestions li:hover {
+   background: #f2f2f2;
+}
+
+/*Buttons*/
+
+.kundli-btn {
+   width: 100%;
+   padding: 18px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+
+   background: #e9941c;
+
+   color: #65250c;
+
+   font-size: 20px;
+   font-weight: 600;
+
+   box-shadow: 0 6px 15px rgba(0, 0, 0, .25);
+
+   transition: all .3s ease;
+}
+
+.kundli-btn:hover {
+   transform: translateY(-2px);
+}
+
+

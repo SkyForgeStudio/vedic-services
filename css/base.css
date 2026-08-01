@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    line-height: 1.5;
+    background: #fff;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+    font: inherit;
+}
+
+input,
+select {
+    min-width: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}

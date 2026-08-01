@@ -1,0 +1,183 @@
+
+
+
+/* Our Services section */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-header h1 {
+        font-size: 1.9rem;
+    }
+
+    .tabs {
+        gap: 18px;
+    }
+}
+
+
+
+
+/* kundli-calculator and matchmaking section */
+
+
+/* Large Tablets (1024px) */
+
+@media (max-width:1024px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .kundli-content {
+        gap: 40px;
+    }
+
+    .kundli-form-area {
+        padding: 40px;
+    }
+
+    .form-grid {
+        gap: 25px 30px;
+    }
+
+    .kundli-title {
+        font-size: 28px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+
+    .kundli-section {
+        padding: 60px 0;
+    }
+
+    .kundli-content {
+        flex-direction: column;
+        gap: 50px;
+        align-items: stretch;
+    }
+
+    .kundli-info {
+        text-align: center;
+    }
+
+    .kundli-description {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .kundli-form-area {
+        padding: 35px;
+    }
+
+    .kundli-title {
+        font-size: 26px;
+    }
+
+    .form-title {
+        font-size: 22px;
+    }
+
+    .form-label {
+        font-size: 17px;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 17px;
+    }
+
+    .kundli-btn {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .kundli-section {
+        padding: 45px 0;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .kundli-form-area {
+        padding: 25px;
+    }
+
+    .kundli-title {
+        font-size: 24px;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .kundli-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .form-label {
+        font-size: 16px;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .kundli-btn {
+        font-size: 17px;
+        padding: 15px;
+    }
+
+}
+
+
+@media (max-width:400px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .kundli-form-area {
+        padding: 18px;
+    }
+
+    .kundli-title {
+        font-size: 21px;
+    }
+
+    .form-title {
+        font-size: 18px;
+    }
+
+    .form-label {
+        font-size: 15px;
+    }
+
+    .input-group input,
+    .input-group select {
+        font-size: 15px;
+    }
+
+    .kundli-btn {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+}
