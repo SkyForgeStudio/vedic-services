@@ -5,9 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vedic Services</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/logo/favicon_io/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon_io/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/logo/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/logo/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/logo/favicon_io/favicon-16x16.png"
+    />
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="manifest" href="./assets/logo/favicon_io/site.webmanifest" />
 
@@ -334,8 +348,12 @@
                             name="phone"
                             placeholder="Enter your phone number"
                             autocomplete="tel"
+                            minlength="10"
+                            maxlength="10"
+                            title="Please enter a valid 10-digit indian mobile number!"
                             required
                           />
+                          <span class="error-msg" id="phoneError"></span>
                         </div>
 
                         <div class="input-group">
@@ -347,8 +365,11 @@
                             name="email"
                             placeholder="Enter your email"
                             autocomplete="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Please enter a valid email address (e.g., name@domain.com)"
                             required
                           />
+                          <span class="error-msg" id="emailError"></span>
                         </div>
 
                         <div class="input-group">
@@ -389,8 +410,18 @@
                               placeholder="Enter city"
                               required
                             />
-                            <ul class="suggestions"></ul>
+                            <ul id="singleSuggestions" class="suggestions"></ul>
                           </div>
+                          <input
+                            type="hidden"
+                            id="singleLat"
+                            name="singleLat"
+                          />
+                          <input
+                            type="hidden"
+                            id="singleLng"
+                            name="singleLng"
+                          />
                         </div>
 
                         <div class="input-group">
@@ -833,30 +864,37 @@
                           />
                         </div>
 
-                        <div class="input-group">
-                          <label for="phone" class="form-label"> Phone </label>
+                       <div class="input-group">
+                          <label for="phone" class="form-label">Phone</label>
 
                           <input
                             type="tel"
                             id="phone"
                             name="phone"
-                            placeholder="Enter Phone Number"
+                            placeholder="Enter your phone number"
                             autocomplete="tel"
+                            minlength="10"
+                            maxlength="10"
+                            title="Please enter a valid 10-digit indian mobile number!"
                             required
                           />
+                          <span class="error-msg" id="phoneError"></span>
                         </div>
 
                         <div class="input-group">
-                          <label for="email" class="form-label"> Email </label>
+                          <label for="email" class="form-label">Email</label>
 
                           <input
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="Enter Email"
+                            placeholder="Enter your email"
                             autocomplete="email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="Please enter a valid email address (e.g., name@domain.com)"
                             required
                           />
+                          <span class="error-msg" id="emailError"></span>
                         </div>
 
                         <div class="input-group">
@@ -1074,7 +1112,7 @@
         <!-- Blogs -->
 
         <!-- Footer -->
-
+        <script src="./js/main.js"></script>
         <script src="./js/services.js"></script>
         <script src="./js/course-animation.js"></script>
         <script src="./js/animation.js"></script>
