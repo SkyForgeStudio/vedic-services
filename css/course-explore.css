@@ -1,3 +1,21 @@
+
+@font-face {
+    font-family: 'FHTotalDisplay';
+    src: url("../assets/fonts/FHTotalDisplay-Test-Regular-BF6514dd5b34b98.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('https://fonts.gstatic.com/s/bevietnampro/v12/QdVNSTAyLFyeg_IDWvOJmVES_HRUNXgSYA.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 *{
     margin:0;
     padding:0;
@@ -11,7 +29,7 @@ body{
 }
 
 .courses{
-    width:100%;
+    width:90%;
     padding:90px 7%;
     background:#faf8f5;
 }
@@ -106,12 +124,13 @@ body{
     font-size:34px;
     color:#5A2414;
     margin-bottom:18px;
-    font-family:'Cormorant Garamond',serif;
+    font-family: var(--font-heading);
 }
 
 
 .course-content p{
-    font-size:18px;
+    font-size:15px;
+    font-weight:600;
     line-height:1.8;
     color:#555;
     margin-bottom:35px;
