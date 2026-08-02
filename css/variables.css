@@ -1,20 +1,35 @@
 :root {
     --primary-text: #65250c;
     --accent-color: rgb(252 239 215);
+
     --card-bg: #ffefd6;
     --success-color: #166534;
     --border-color: #d4af37;
+
+    --color-white: #ffffff;
+
+    --color-accent-gold: orange;
+
     --headercombo-color: #F59E0B;
     --color-primary: rgb(101, 37, 12);
+    --color-border-brown: rgba(31, 12, 5, 0.691);
     --color-success: rgb(22, 101, 52);
     --color-bg-card: #fff9e6;
+    --color-card-bg: #fff9e6;
     --color-border-card: #d4af37;
     --color-badge-bg: #e2c08d;
     --color-btn-refresh: rgb(243, 215, 165);
-    --font-heading: 'FHTotalDisplay', sans-serif;
-    --font-body: 'Be Vietnam Pro', sans-serif;
+
+    --color-btn-bg:linear-gradient(180deg, #f3a833 0%, #e68a00 100%);
+    --color-primary-dark:#3b1800;
+
     --font-heading: 'FHTotalDisplay', sans-serif;
     --font-body: 'Be Vietnam Pro', sans-serif;
     --radius-sm: 4px;
     --radius-md: 8px;
+
+    --color-text-muted: #b09380;
+
+    --color-primary-dark: #4d1a08;
+    --color-text-dark: #331307;
 }

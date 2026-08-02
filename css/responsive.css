@@ -30,6 +30,8 @@
         gap: 40px;
     }
 
+    .notched-card {}
+
     .kundli-form-area {
         padding: 40px;
     }
@@ -48,6 +50,11 @@
 @media (max-width: 768px) {
     .kundli-section {
         padding: 60px 0;
+    }
+
+    .notched-card,
+    .notched-card-body {
+        clip-path: none;
     }
 
     .kunldi-icon-text {
@@ -114,6 +121,8 @@
     .kundli-form-area {
         padding: 25px;
     }
+
+    .notched-card {}
 
     .kundli-title {
         font-size: 24px;

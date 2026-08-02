@@ -16,7 +16,6 @@
 }
 
 .notched-card-body {
-    background: var(--card-bg);
     padding: 50px;
     
     clip-path: polygon(6% 50%,
