@@ -14,18 +14,6 @@
    font-display: swap;
 }
 
-:root {
-   --color-primary-dark: #65250c;
-   --color-accent-gold: #d98d22;
-   --color-border-brown: #8d5b22;
-   --color-card-bg: #ffefd6;
-   --color-text-dark: #222222;
-   --color-text-muted: #9b8b7b;
-   --color-btn-bg: #e9941c;
-   --color-white: #ffffff;
-   --font-heading: 'FHTotalDisplay', sans-serif;
-   --font-body: 'Be Vietnam Pro', sans-serif;
-}
 
 *,
 *::before,
