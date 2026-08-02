@@ -1,9 +1,10 @@
 :root {
     --primary-text: #65250c;
-    --accent-color: #d98d22;
+    --accent-color: rgb(252 239 215);
     --card-bg: #ffefd6;
     --success-color: #166534;
     --border-color: #d4af37;
+    --headercombo-color: #F59E0B;
     --color-primary: rgb(101, 37, 12);
     --color-success: rgb(22, 101, 52);
     --color-bg-card: #fff9e6;

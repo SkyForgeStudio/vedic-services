@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'FHTotalDisplay';
+    src: url("../assets/fonts/FHTotalDisplay-Test-Regular-BF6514dd5b34b98.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('https://fonts.gstatic.com/s/bevietnampro/v12/QdVNSTAyLFyeg_IDWvOJmVES_HRUNXgSYA.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -10,18 +26,24 @@
 }
 
 .section-header h1 {
+    font-family: var(--font-heading);
     font-size: 2.4rem;
     font-weight: 700;
-    color: #c9a227;
+    color: var(--color-primary);
     margin-bottom: 10px;
     letter-spacing: -0.5px;
 }
 
 .section-header p {
     font-size: 1.05rem;
-    color: #6b5b4f;
+    color:var(--color-primary);
+    font-weight:600;
     max-width: 520px;
     margin: 0 auto;
+}
+
+#service-h1{
+    color:var(--headercombo-color);
 }
 
 /* Tabs */
@@ -36,21 +58,18 @@
 .tab {
     background: none;
     border: none;
+    font-family: var(--font-heading);
     font-size: 1rem;
-    font-weight: 500;
-    color: #6b5b4f;
+    font-weight: 400;
+    color: #0b0b0b;
     cursor: pointer;
     padding: 6px 4px;
     position: relative;
     transition: color 0.2s;
 }
 
-.tab:hover {
-    color: #c9a227;
-}
 
 .tab.active {
-    color: #c9a227;
     font-weight: 600;
 }
 
@@ -61,7 +80,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background: #c9a227;
+    background: var(--headercombo-color);
     border-radius: 2px;
 }
 
@@ -74,7 +93,7 @@
 
 /* Card */
 .service-card {
-    background: #fff8e7;
+    background: var(--accent-color);
     border: 1.5px solid #e8d5a3;
     border-radius: 14px;
     padding: 28px 24px 22px;
@@ -120,16 +139,19 @@
 }
 
 .service-card h3 {
-    font-size: 1.15rem;
+    font-family: var(--font-heading);
+    font-size: 1rem;
     font-weight: 600;
-    color: #3d2b1f;
+    color: var(--color-primary);
     text-align: center;
     margin-bottom: 8px;
     line-height: 1.35;
 }
 
 .service-card p {
-    font-size: 0.92rem;
+    font-family: var(--font-body);
+    font-weight:600;
+    font-size: 0.85rem;
     color: #6b5b4f;
     text-align: center;
     margin-bottom: 22px;
@@ -139,20 +161,20 @@
 .btn {
     display: block;
     width: 100%;
-    padding: 12px;
+    padding: 8px;
     background: transparent;
-    border: 1.5px solid #c9a227;
+    border: 1.5px solid #000000;
     border-radius: 8px;
-    color: #c9a227;
-    font-size: 0.95rem;
-    font-weight: 600;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 800;
     cursor: pointer;
     transition: all 0.2s;
     text-align: center;
 }
 
 .btn:hover {
-    background: #c9a227;
+    background: var(--color-primary);
     color: #fff;
 }
 
@@ -163,15 +185,16 @@
 }
 
 .view-more a {
-    color: #c9a227;
-    font-weight: 500;
+    color: var(--color-primary);
+    font-weight: 600;
     text-decoration: underline;
-    font-size: 1rem;
+    font-family: fh-medium, sans-serif;
+    font-size: 0.9rem;
     display: inline-flex;
     align-items: center;
     gap: 4px;
 }
 
 .view-more a:hover {
-    color: #a88a1f;
+    color: #1e1907;
 }
