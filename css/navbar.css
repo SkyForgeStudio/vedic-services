@@ -4,17 +4,26 @@
 
   body {
       margin: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: var(--font-body);
   }
 
+  section.navbar,
   .navbar {
       width: 100%;
       background: #a86d2d;
       min-height: 80px;
       display: flex;
       align-items: center;
-      position: relative;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0;
       z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar--hidden {
+      transform: translateY(-100%);
   }
 
   .navbar-container {
@@ -33,7 +42,7 @@
       align-items: center;
       color: var(--color-white);
       text-decoration: none;
-      font-family:var(--font-heading);
+      font-family: var(--font-heading);
       font-weight: 700;
       font-size: 1.1rem;
       white-space: nowrap;
@@ -75,9 +84,8 @@
   .nav-links a {
       color: #ffffff;
       text-decoration: none;
-      font-family:--font-body;
+      font-family: --font-body;
       font-size: 0.95rem;
-      font-weight: 600;
       white-space: nowrap;
       transition: color 0.3s ease;
   }
