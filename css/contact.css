@@ -42,7 +42,7 @@ body {
 }
 
 .consultation h2 {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
 }
 
 #title,
@@ -58,6 +58,8 @@ span[about="title"] {
     background: url('./assets/icon/consultation-bg.7d686ffc.svg') no-repeat center center / cover;
     background-color: var(--bg-light);
     text-align: center;
+    padding-top:2rem;
+    padding-bottom:2rem;
 }
 
 .consultation .container {
@@ -219,6 +221,15 @@ span[about="title"] {
     margin-bottom: 0.5rem;
 }
 
+.faq{
+    padding:2rem;
+}
+
+.footer-container h2{
+    font-family:var(--font-heading);
+    font-size:2.5rem;
+}
+
 .stats-desc {
     font-size: 0.95rem;
     font-weight: 600;
@@ -245,12 +256,15 @@ span[about="title"] {
 
 .footer-container h2,
 .guide-title {
-    font-size: 1.35rem;
+    font-size: 2.3rem;
     margin-bottom: 0.75rem;
+    font-weight:600;
+    font-family:var(--font-heading);
 }
 
 .footer-desc,
 .guide-desc {
+    font-family:var(--font-body);
     font-size: 0.95rem;
     font-weight: 800;
     color: var(--brand-brown-muted);
