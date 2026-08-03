@@ -55,7 +55,6 @@ span[about="title"] {
 }
 
 .consultation {
-    background: url('./assets/icon/consultation-bg.7d686ffc.svg') no-repeat center center / cover;
     background-color: var(--bg-light);
     text-align: center;
     padding-top:2rem;
