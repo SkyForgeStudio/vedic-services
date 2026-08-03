@@ -1,287 +1,178 @@
-/* =========================
-   Google Font
-========================= */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+@font-face {
+    font-family: 'FHTotalDisplay';
+    src: url("../assets/fonts/FHTotalDisplay-Test-Regular-BF6514dd5b34b98.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-body{
-
-    background:#FDF6EC;
-    font-family:'Poppins',sans-serif;
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('https://fonts.gstatic.com/s/bevietnampro/v12/QdVNSTAyLFyeg_IDWvOJmVES_HRUNXgSYA.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* ========================= */
-
-.calculator-section{
-
-    padding:80px 7%;
+:root {
+    --primary-color: #d88c1a;
+    --primary-hover: #55210f;
+    --text-heading: #5a2414;
+    --text-subtitle: #5e4635;
+    --text-body: #555555;
+    --bg-page: #fdf6ec;
+    --bg-card: #fff7ed;
+    --bg-icon: #fff3e0;
+    --border-card: #d9a054;
+    --border-btn: #6a4633;
+    --font-heading: 'FHTotalDisplay', serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
 }
 
-.container{
-
-    max-width:1500px;
-    margin:auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ========================= */
-
-.calculator-section h1{
-
-    text-align:center;
-    font-size:62px;
-    font-family:'Cormorant Garamond',serif;
-    color:#5A2414;
-    margin-bottom:15px;
+body {
+    background: var(--bg-page);
+    font-family: var(--font-body);
 }
 
-.calculator-section h1 span{
-
-    color:#D88C1A;
+.calculator-section {
+    padding: 80px 7%;
 }
 
-/* ========================= */
-
-.subtitle{
-
-    text-align:center;
-    font-size:30px;
-    color:#5E4635;
-    margin-bottom:60px;
-    font-weight:400;
+.container {
+    max-width: 1500px;
+    margin: auto;
 }
 
-/* ========================= */
-
-.calculator-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:28px;
+.calculator-section h1 {
+    text-align: center;
+    font-size: clamp(42px, 5vw, 62px);
+    font-family: var(--font-heading);
+    color: var(--text-heading);
+    margin-bottom: 15px;
 }
 
-/* ========================= */
-
-.card{
-
-    background:#FFF7ED;
-
-    border:1px solid #D9A054;
-
-    padding:28px;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    transition:.35s;
+.calculator-section h1 span {
+    color: var(--primary-color);
 }
 
-/* Hover */
-
-.card:hover{
-
-    transform:translateY(-6px);
-
-    box-shadow:0 12px 25px rgba(0,0,0,.08);
+.subtitle {
+    text-align: center;
+    font-size: clamp(18px, 2.5vw, 30px);
+    color: var(--text-subtitle);
+    margin-bottom: 60px;
+    font-weight: 400;
 }
 
-/* ========================= */
-
-.left{
-
-    display:flex;
-
-    gap:22px;
-
-    align-items:flex-start;
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
 }
 
-/* ========================= */
-
-.icon{
-
-    width:65px;
-
-    height:65px;
-
-    background:#FFF3E0;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:30px;
-
-    color:#DD8C16;
-
-    transition:.4s;
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    padding: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.card:hover .icon{
-
-    background:#DD8C16;
-
-    color:white;
-
-    transform:rotate(12deg);
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* ========================= */
-
-.content h3{
-
-    font-size:36px;
-
-    color:#55210F;
-
-    font-family:'Cormorant Garamond',serif;
-
-    margin-bottom:10px;
+.left {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
 }
 
-/* ========================= */
-
-.content p{
-
-    color:#555;
-
-    font-size:18px;
-
-    line-height:1.7;
-
-    max-width:470px;
+.icon {
+    width: 65px;
+    height: 65px;
+    background: var(--bg-icon);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--primary-color);
+    transition: background 0.4s ease, color 0.4s ease, transform 0.4s ease;
 }
 
-/* ========================= */
-
-.btn{
-
-    text-decoration:none;
-
-    border:1px solid #6A4633;
-
-    padding:16px 24px;
-
-    color:#4F2415;
-
-    font-size:18px;
-
-    transition:.35s;
-
-    white-space:nowrap;
+.card:hover .icon {
+    background: var(--primary-color);
+    color: #ffffff;
+    transform: rotate(12deg);
 }
 
-.btn:hover{
-
-    background:#55210F;
-
-    color:white;
+.content h3 {
+    font-size: clamp(28px, 3vw, 36px);
+    color: var(--text-heading);
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
 }
 
-/* ========================= */
-
-@media(max-width:1200px){
-
-.content h3{
-
-font-size:30px;
-
+.content p {
+    color: var(--text-body);
+    font-size: clamp(16px, 1.5vw, 18px);
+    line-height: 1.7;
+    max-width: 470px;
 }
 
-.subtitle{
-
-font-size:24px;
-
+.btn {
+    text-decoration: none;
+    border: 1px solid var(--border-btn);
+    padding: 16px 24px;
+    color: var(--text-heading);
+    font-size: 18px;
+    transition: background 0.35s ease, color 0.35s ease;
+    white-space: nowrap;
 }
 
+.btn:hover {
+    background: var(--primary-hover);
+    color: #ffffff;
 }
 
-/* ========================= */
+@media (max-width: 992px) {
+    .calculator-grid {
+        grid-template-columns: 1fr;
+    }
 
-@media(max-width:992px){
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
 
-.calculator-grid{
-
-grid-template-columns:1fr;
-
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.card{
+@media (max-width: 600px) {
+    .calculator-section {
+        padding: 50px 20px;
+    }
 
-flex-direction:column;
+    .subtitle {
+        margin-bottom: 40px;
+    }
 
-align-items:flex-start;
-
-gap:25px;
-
-}
-
-.btn{
-
-width:100%;
-
-text-align:center;
-
-}
-
-}
-
-/* ========================= */
-
-@media(max-width:600px){
-
-.calculator-section{
-
-padding:50px 20px;
-
-}
-
-.calculator-section h1{
-
-font-size:42px;
-
-}
-
-.subtitle{
-
-font-size:18px;
-
-margin-bottom:40px;
-
-}
-
-.content h3{
-
-font-size:28px;
-
-}
-
-.content p{
-
-font-size:16px;
-
-}
-
-.icon{
-
-width:55px;
-
-height:55px;
-
-font-size:24px;
-
-}
-
+    .icon {
+        width: 55px;
+        height: 55px;
+        font-size: 24px;
+    }
 }

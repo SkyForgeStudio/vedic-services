@@ -1,13 +1,57 @@
+@font-face {
+    font-family: 'FHTotalDisplay';
+    src: url("../assets/fonts/FHTotalDisplay-Test-Regular-BF6514dd5b34b98.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('https://fonts.gstatic.com/s/bevietnampro/v12/QdVNSTAyLFyeg_IDWvOJmVES_HRUNXgSYA.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 :root {
-    --primary-gold: #F59E0B;
-    --primary-hover: #D97706;
-    --brand-brown: #65250C;
-    --brand-brown-muted: #804020;
-    --border-gold: #E59A2E;
-    --bg-cream: #FAF5EF;
-    --bg-light: #FFFBEB;
-    --font-heading: 'Playfair Display', serif, system-ui;
-    --font-body: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+  
+    --primary-color: #d97706;
+
+    --primary-hover: #b45309;
+  
+    --primary-dark: #0f172a;
+
+    --text-heading: #1e1b4b;
+   
+    --text-body: #475569;
+  
+    --text-light: #f8fafc;
+ 
+
+    --bg-cream: #faf5ef;
+
+    --bg-light: #fffbeb;
+ 
+    --card-bg: #ffffff;
+ 
+    --card-border: rgba(217, 119, 6, 0.3);
+ 
+    --border-gold: #e59a2e;
+    
+
+   
+    --button-shadow: rgba(217, 119, 6, 0.35);
+    --button-shadow-hover: rgba(217, 119, 6, 0.45);
+    --icon-box-shadow: rgba(30, 27, 75, 0.05);
+
+  
+    --font-heading: 'FHTotalDisplay', sans-serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
+
+    
+    --color-btn-bg: linear-gradient(135deg, #d97706 0%, #b45309 100%);
 }
 
 * {
@@ -18,8 +62,8 @@
 
 body {
     font-family: var(--font-body);
-    color: var(--brand-brown);
-    background-color: #FFFFFF;
+    color: var(--text-body);
+    background-color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -33,16 +77,16 @@ body {
 .consultation h2 {
     font-family: var(--font-heading);
     font-weight: 700;
-    color: var(--brand-brown);
+    color: var(--text-heading);
     line-height: 1.25;
 }
 
 .consultation h1 {
-    font-size: 2.75rem;
+    font-size: clamp(2.1rem, 1.5rem + 2vw, 2.75rem);
 }
 
 .consultation h2 {
-    font-size: 2.8rem;
+    font-size: clamp(1.6rem, 1.2rem + 2vw, 2.8rem);
 }
 
 #title,
@@ -50,15 +94,15 @@ span[query="title"],
 span[review="title"],
 span[result="title"],
 span[about="title"] {
-    color: var(--primary-gold);
+    color: var(--primary-color);
     display: inline;
 }
 
 .consultation {
     background-color: var(--bg-light);
     text-align: center;
-    padding-top:2rem;
-    padding-bottom:2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .consultation .container {
@@ -70,7 +114,7 @@ span[about="title"] {
     max-width: 780px;
     margin: 1rem auto 0 auto;
     font-size: 1.15rem;
-    color: var(--brand-brown-muted);
+    color: var(--text-body);
 }
 
 .consultation .divider-wrapper {
@@ -118,9 +162,9 @@ span[about="title"] {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(4px);
-    box-shadow: 0 4px 10px rgba(101, 37, 12, 0.05);
+    box-shadow: 0 4px 10px var(--icon-box-shadow);
 }
 
 .consultation .info-container img {
@@ -130,17 +174,17 @@ span[about="title"] {
 }
 
 .consultation .info-title {
-    font-family:var(--font-body);
+    font-family: var(--font-body);
     font-weight: 700;
     font-size: 1.1rem;
-    color: var(--brand-brown);
+    color: var(--text-heading);
     margin-bottom: 0.5rem;
 }
 
 .consultation .info-desc {
-    font-weight:600;
+    font-weight: 600;
     font-size: 0.9rem;
-    color: var(--brand-brown-muted);
+    color: var(--text-body);
 }
 
 .consultation .btn-container {
@@ -152,26 +196,26 @@ span[about="title"] {
     padding: 0.85rem 2.5rem;
     border: none;
     border-radius: 30px;
-    background-color: var(--primary-gold);
-    color: #FFFFFF;
+    background: var(--color-btn-bg);
+    color: var(--text-light);
     cursor: pointer;
     font-size: 1.1rem;
     font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    box-shadow: 0 4px 15px var(--button-shadow);
 }
 
 .consultation .btn-schedule:hover {
-    background-color: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45);
+    filter: brightness(1.05);
+    box-shadow: 0 6px 20px var(--button-shadow-hover);
 }
 
 .app-banner,
 .review,
 .About {
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .info-query,
@@ -186,7 +230,7 @@ span[about="title"] {
 .about-desc,
 .results-desc {
     font-size: 1.1rem;
-    color: var(--brand-brown-muted);
+    color: var(--text-body);
     margin-top: 0.75rem;
 }
 
@@ -214,32 +258,33 @@ span[about="title"] {
 }
 
 .number {
-    font-size: 3.25rem;
+    font-size: clamp(2.5rem, 2rem + 1.5vw, 3.25rem);
     font-weight: 900;
     font-family: var(--font-heading);
-    color: var(--brand-brown);
+    color: var(--text-heading);
     line-height: 1;
     margin-bottom: 0.5rem;
 }
 
-.faq{
-    padding:2rem;
+.faq {
+    padding: 2rem;
 }
 
-.footer-container h2{
-    font-family:var(--font-heading);
-    font-size:2.5rem;
+.footer-container h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--text-heading);
 }
 
 .stats-desc {
     font-size: 0.95rem;
     font-weight: 600;
-    color: var(--brand-brown-muted);
+    color: var(--text-body);
 }
 
 .footer {
-    background-color: #FAF5EF;
-    border-top: 1px solid rgba(101, 37, 12, 0.1);
+    background-color: var(--bg-cream);
+    border-top: 1px solid var(--card-border);
 }
 
 .footer-info {
@@ -259,26 +304,25 @@ span[about="title"] {
 .guide-title {
     font-size: 2.3rem;
     margin-bottom: 0.75rem;
-    font-weight:600;
-    font-family:var(--font-heading);
+    font-weight: 600;
+    font-family: var(--font-heading);
+    color: var(--text-heading);
 }
 
 .footer-desc,
 .guide-desc {
-    font-family:var(--font-body);
+    font-family: var(--font-body);
     font-size: 0.95rem;
-    font-weight: 800;
-    color: var(--brand-brown-muted);
+    font-weight: 600;
+    color: var(--text-body);
     line-height: 1.7;
     white-space: pre-line;
 }
 
-@media (max-width: 1024px) {
-    .consultation .contact-info {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
 
+@media (max-width: 1024px) {
+
+    .consultation .contact-info,
     .viewer-info {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -288,18 +332,6 @@ span[about="title"] {
 @media (max-width: 768px) {
     .consultation section {
         padding: 2.5rem 1rem;
-    }
-
-    .consultation h1 {
-        font-size: 2.1rem;
-    }
-
-    .consultation h2 {
-        font-size: 1.6rem;
-    }
-
-    .number {
-        font-size: 2.5rem;
     }
 }
 

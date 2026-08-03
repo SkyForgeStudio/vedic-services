@@ -1,7 +1,7 @@
 .kundli-match-section {
     width: 100%;
     padding: 80px 0;
-    background-image: url("../assets/images/calculator-bg-image.e2794f17.svg");
+    background:var(--bg-gradient);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

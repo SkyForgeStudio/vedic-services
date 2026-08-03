@@ -14,17 +14,60 @@
     font-display: swap;
 }
 
+/* Centralized Global Theme System */
+:root {
+    /* Brand & Accent Colors */
+    --color-primary: #d97706;
+    /* Solar Gold */
+    --color-primary-hover: #b45309;
+    /* Deep Amber Hover */
+    --color-success: #15803d;
+    /* Emerald Success */
+    --text-heading: #1e1b4b;
+    /* Deep Indigo */
+    --text-body: #1a1a1a;
+    /* Dark Neutral Text */
+
+    /* Section & Component Surfaces */
+    --color-bg-section: #fff1da;
+    /* Warm Panchang Surface */
+    --color-bg-card: rgba(255, 255, 255, 0.6);
+    --color-border-card: #e0e0e0;
+    --color-badge-bg: rgba(217, 119, 6, 0.15);
+    --color-chart-center: #fdf8ed;
+
+    /* Interactive Controls */
+    --color-border-control: #cccccc;
+    --color-btn-refresh: #f3e0be;
+    --color-btn-refresh-hover: #ebd09e;
+    --color-btn-more: rgba(230, 137, 61, 0.51);
+    --color-btn-more-hover: rgba(240, 152, 52, 0.52);
+
+    /* Chart Data Visualizer Colors */
+    --chart-nighttime: #1d2a44;
+    --chart-daytime: #d97706;
+    --chart-rahukaal: #9a3412;
+    --chart-abhijit: #854d0e;
+
+    /* Typography Systems */
+    --font-heading: 'FHTotalDisplay', sans-serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-body);
-    color: #1a1a1a;
+    color: var(--text-body);
     line-height: 1.5;
 }
 
 .panchang-section {
     width: 100%;
-    background-color: #FFF1DA;
+    background-color: var(--color-bg-section);
     padding: clamp(2.5rem, 5vw, 6.2rem) clamp(1rem, 3vw, 2rem);
-    box-sizing: border-box;
 }
 
 .panchang-section .container {
@@ -63,6 +106,7 @@ body {
     align-self: flex-start;
     padding: 0.35rem 0.85rem;
     background-color: var(--color-badge-bg);
+    color: var(--color-primary-hover);
     font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.9rem);
     font-weight: 700;
     border-radius: 4px;
@@ -125,7 +169,7 @@ body {
     width: 100%;
     padding: clamp(0.5rem, 0.4rem + 0.3vw, 0.75rem) clamp(0.75rem, 0.6rem + 0.4vw, 1rem);
     background-color: transparent;
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border-control);
     border-radius: 4px;
     font-family: inherit;
     font-size: clamp(0.9rem, 0.82rem + 0.35vw, 1.05rem);
@@ -139,7 +183,7 @@ body {
     justify-content: center;
     gap: 8px;
     padding: clamp(0.55rem, 0.45rem + 0.35vw, 0.75rem) clamp(0.85rem, 0.7rem + 0.5vw, 1.25rem);
-    border: 1px solid #ccc;
+    border: 1px solid var(--color-border-control);
     border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
@@ -152,20 +196,20 @@ body {
 }
 
 .btn-refresh:hover {
-    background-color: #ebd09e;
+    background-color: var(--color-btn-refresh-hover);
 }
 
 .btn-view-more {
     align-self: flex-start;
-    background-color: #e6893d83;
+    background-color: var(--color-btn-more);
 }
 
 .btn-view-more:hover {
-    background-color: #f0983486;
+    background-color: var(--color-btn-more-hover);
 }
 
 .chart-card {
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border-card);
     padding: clamp(1.25rem, 3vw, 2rem);
     display: flex;
     flex-direction: column;
@@ -173,7 +217,7 @@ body {
     justify-content: center;
     gap: 1.5rem;
     flex: 1;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: var(--color-bg-card);
     border-radius: 8px;
 }
 
@@ -190,10 +234,10 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: conic-gradient(#1d2a44 0% 46%,
-            #d97706 46% 89%,
-            #9a3412 89% 96%,
-            #854d0e 96% 100%);
+    background: conic-gradient(var(--chart-nighttime) 0% 46%,
+            var(--chart-daytime) 46% 89%,
+            var(--chart-rahukaal) 89% 96%,
+            var(--chart-abhijit) 96% 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,7 +249,7 @@ body {
     width: 60%;
     height: 60%;
     border-radius: 50%;
-    background-color: #fdf8ed;
+    background-color: var(--color-chart-center);
 }
 
 .chart-center-text {
@@ -252,18 +296,17 @@ body {
 }
 
 .dot-daytime {
-    background-color: #d97706;
+    background-color: var(--chart-daytime);
 }
 
 .dot-nighttime {
-    background-color: #1d2a44;
+    background-color: var(--chart-nighttime);
 }
 
 .dot-rahukaal {
-    background-color: #9a3412;
+    background-color: var(--chart-rahukaal);
 }
 
 .dot-abhijit {
-    background-color: #854d0e;
+    background-color: var(--chart-abhijit);
 }
-

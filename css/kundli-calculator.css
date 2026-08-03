@@ -14,6 +14,47 @@
    font-display: swap;
 }
 
+/* Centralized Global Theme System */
+:root {
+   /* Brand & Accent Colors */
+   --primary-color: #d97706;
+   /* Solar Gold */
+   --primary-hover: #b45309;
+   /* Deep Amber Hover */
+   --primary-dark: #0f172a;
+   /* Midnight Slate */
+   --text-heading: #1e1b4b;
+   /* Deep Indigo */
+   --text-body: #475569;
+   /* Muted Slate Body */
+   --text-light: #f8fafc;
+   /* Celestial White */
+
+   /* Cards, Forms & Container Backgrounds */
+   --card-bg: #ffffff;
+   /* Form Card Surface */
+   --card-border: rgba(217, 119, 6, 0.4);
+   /* Soft Gold Border */
+   --input-border: rgba(15, 23, 42, 0.2);
+   /* Muted Input Bottom Border */
+   --input-focus: #d97706;
+   /* Gold Focus Highlight */
+
+   /* Interactive & Dropdown States */
+   --dropdown-bg: #ffffff;
+   --dropdown-border: rgba(15, 23, 42, 0.15);
+   --dropdown-hover-bg: #1e1b4b;
+   /* Indigo Active Hover */
+   --dropdown-hover-text: #f8fafc;
+   --button-shadow: rgba(0, 0, 0, 0.2);
+
+   /* Typography Systems */
+   --font-heading: 'FHTotalDisplay', sans-serif;
+   --font-body: 'Be Vietnam Pro', sans-serif;
+
+   /* Computed Gradients */
+   --color-btn-bg: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+}
 
 *,
 *::before,
@@ -31,7 +72,7 @@
    padding: 120px 0;
    min-height: 800px;
    margin-top: 4rem;
-   background-image: url("../assets/images/calculator-bg-image.e2794f17.svg");
+   background: var(--bg-gradient);
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -52,14 +93,14 @@
    font-family: var(--font-heading);
    font-size: clamp(2.5rem, 1.5rem + 2.5vw, 3.75rem);
    font-weight: 600;
-   color: var(--color-white);
+   color: var(--text-light);
 }
 
 .kundli-description {
    font-family: var(--font-body);
    font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1rem);
    line-height: 1.8;
-   color: var(--color-white);
+   color: var(--text-light);
    max-width: 440px;
 }
 
@@ -68,13 +109,15 @@
    width: 100%;
    max-width: 620px;
    padding: 1.5rem;
-   background: var(--color-card-bg);
+   background: var(--card-bg);
    position: relative;
+   border-radius: 12px;
 }
 
 .kundli-form-area {
-   border: 2px solid var(--color-accent-gold);
+   border: 2px solid var(--primary-color);
    padding: 60px 45px;
+   border-radius: 8px;
 }
 
 .kundli-card-title {
@@ -84,7 +127,7 @@
 
 .form-title {
    font-family: var(--font-heading);
-   color: var(--color-primary-dark);
+   color: var(--text-heading);
    font-size: clamp(1.125rem, 1rem + 0.6vw, 3.5rem);
    font-weight: 600;
 }
@@ -112,7 +155,7 @@
    font-family: var(--font-body);
    font-size: clamp(0.938rem, 0.82rem + 0.5vw, 1.25rem);
    font-weight: 600;
-   color: var(--color-primary-dark);
+   color: var(--text-heading);
 }
 
 .input-group input,
@@ -121,22 +164,24 @@
    padding: 6px 0;
    background: transparent;
    border: none;
-   border-bottom: 1px solid var(--color-border-brown);
+   border-bottom: 1.5px solid var(--input-border);
    outline: none;
    font-family: var(--font-body);
    font-size: clamp(0.938rem, 0.82rem + 0.5vw, 1.25rem);
    font-weight: 700;
-   color: var(--color-text-dark);
+   color: var(--primary-dark);
+   transition: border-color 0.2s ease;
 }
 
 .input-group input::placeholder {
-   color: var(--color-text-muted);
+   color: var(--text-body);
    font-weight: normal;
+   opacity: 0.7;
 }
 
 .input-group input:focus,
 .input-group select:focus {
-   border-bottom-color: var(--color-accent-gold);
+   border-bottom-color: var(--input-focus);
 }
 
 .autocomplete {
@@ -149,30 +194,32 @@
    left: 0;
    width: 100%;
    list-style: none;
-   border: 1px solid #ddd;
+   border: 1px solid var(--dropdown-border);
+   border-radius: 0 0 8px 8px;
    max-height: 220px;
    overflow-y: auto;
    display: none;
    z-index: 100;
    margin: 0;
    padding: 0;
+   box-shadow: 0 4px 12px var(--button-shadow);
 }
 
 .suggestions li {
    padding: 12px;
    cursor: pointer;
-   background-color: var(--color-white);
+   background-color: var(--dropdown-bg);
+   color: var(--primary-dark);
    font-family: var(--font-body);
-   font-weight: 800;
+   font-weight: 700;
    font-size: 0.9rem;
-   transition: background 0.2s ease;
+   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .suggestions li:hover {
-   background-color: var(--primary-text);
-   color: var(--color-white);
+   background-color: var(--dropdown-hover-bg);
+   color: var(--dropdown-hover-text);
 }
-
 
 .kundli-btn {
    width: 100%;
@@ -181,14 +228,15 @@
    border-radius: 8px;
    cursor: pointer;
    background: var(--color-btn-bg);
-   color: var(--color-primary-dark);
+   color: var(--text-light);
    font-family: var(--font-body);
    font-size: clamp(1rem, 0.88rem + 0.6vw, 1.375rem);
-   font-weight: 900;
-   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-   transition: transform 0.3s ease, background-color 0.3s ease;
+   font-weight: 800;
+   box-shadow: 0 4px 12px var(--button-shadow);
+   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .kundli-btn:hover {
    transform: translateY(-2px);
+   filter: brightness(1.05);
 }

@@ -1,126 +1,202 @@
-  * {
-      box-sizing: border-box;
-  }
+@font-face {
+    font-family: 'FHTotalDisplay';
+    src: url("../assets/fonts/FHTotalDisplay-Test-Regular-BF6514dd5b34b98.woff") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
-  body {
-      margin: 0;
-      font-family: var(--font-body);
-  }
+@font-face {
+    font-family: 'Be Vietnam Pro';
+    src: url('https://fonts.gstatic.com/s/bevietnampro/v12/QdVNSTAyLFyeg_IDWvOJmVES_HRUNXgSYA.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
-  section.navbar,
-  .navbar {
-      width: 100%;
-      background: #a86d2d;
-      min-height: 80px;
-      display: flex;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      left: 0;
-      padding: 0;
-      z-index: 1000;
-      transition: transform 0.3s ease-in-out;
-  }
+/* Centralized Global Theme System */
+:root {
+    /* Brand & Accent Colors */
+    --primary-color: #d97706;
+    /* Solar Gold */
+    --primary-hover: #b45309;
+    /* Deep Amber Hover */
+    --primary-dark: #0f172a;
+    /* Midnight Slate */
+    --text-heading: #1e1b4b;
+    /* Deep Indigo */
+    --text-body: #475569;
+    /* Muted Slate Body */
+    --text-light: #f8fafc;
+    /* Celestial White */
 
-  .navbar--hidden {
-      transform: translateY(-100%);
-  }
+    /* Navbar Surface */
+    --navbar-bg: #804020;
+    /* Deep Warm Brand Brown */
+    --navbar-text: #ffffff;
+    --navbar-hover-accent: #f59e0b;
+    --button-bg: #f59e0b;
+    --button-text: #0f172a;
 
-  .navbar-container {
-      width: min(92%, 1400px);
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 2rem;
-      padding: 0.6rem 0;
-      border-radius: 10%;
-  }
+    /* Typography Systems */
+    --font-heading: 'FHTotalDisplay', sans-serif;
+    --font-body: 'Be Vietnam Pro', sans-serif;
+}
 
-  .logo {
-      display: flex;
-      align-items: center;
-      color: var(--color-white);
-      text-decoration: none;
-      font-family: var(--font-heading);
-      font-weight: 700;
-      font-size: 1.1rem;
-      white-space: nowrap;
-  }
+* {
+    box-sizing: border-box;
+}
 
-  .logo img {
-      border-radius: 20%;
-      width: 40px;
-      display: block;
-      margin-right: 10px;
-  }
+body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--text-body);
+}
 
-  .menu-toggle {
-      display: none;
-      background: none;
-      border: none;
-      color: var(--color-white);
-      font-size: 1.8rem;
-      cursor: pointer;
-      line-height: 1;
-      padding: 4px 8px;
-  }
+section.navbar,
+.navbar {
+    width: 100%;
+    background: var(--navbar-bg);
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
 
-  .nav-menu {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-  }
+.navbar--hidden {
+    transform: translateY(-100%);
+}
 
-  .nav-links ul {
-      display: flex;
-      align-items: center;
-      gap: 1.5rem;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-  }
+.navbar-container {
+    width: min(92%, 1400px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 0.6rem 0;
+}
 
-  .nav-links a {
-      color: #ffffff;
-      text-decoration: none;
-      font-family: --font-body;
-      font-size: 0.95rem;
-      white-space: nowrap;
-      transition: color 0.3s ease;
-  }
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--navbar-text);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
 
-  .nav-links a:hover {
-      color: #ffd27c;
-  }
+.logo img {
+    border-radius: 20%;
+    width: 40px;
+    display: block;
+    margin-right: 10px;
+}
 
-  .caret {
-      display: none;
-  }
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--navbar-text);
+    font-size: 1.8rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 4px 8px;
+}
 
-  .login-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.8rem 1.7rem;
-      background: #f8bd57;
-      color: #2f2414;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 600;
-      border-radius: 2px;
-      transition: background 0.3s ease;
-      white-space: nowrap;
-  }
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
 
-  .login-btn:hover {
-      background: #ffd27c;
-  }
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
-  .contact-btn {
-      display: none;
-  }
+.nav-links a {
+    color: var(--navbar-text);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
 
-  .overlay-header {
-      display: none;
-  }
+.nav-links a:hover {
+    color: var(--navbar-hover-accent);
+}
+
+.caret {
+    display: none;
+}
+
+.login-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.7rem;
+    background: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+.login-btn:hover {
+    background: var(--primary-hover);
+    color: var(--text-light);
+}
+
+.contact-btn,
+.overlay-header {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: var(--navbar-bg);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        gap: 2rem;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+}
