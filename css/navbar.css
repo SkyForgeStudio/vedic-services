@@ -75,8 +75,9 @@
   .nav-links a {
       color: #ffffff;
       text-decoration: none;
+      font-family:--font-body;
       font-size: 0.95rem;
-      font-weight: 500;
+      font-weight: 600;
       white-space: nowrap;
       transition: color 0.3s ease;
   }
