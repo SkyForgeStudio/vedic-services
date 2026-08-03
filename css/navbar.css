@@ -33,6 +33,7 @@
       align-items: center;
       color: var(--color-white);
       text-decoration: none;
+      font-family:var(--font-heading);
       font-weight: 700;
       font-size: 1.1rem;
       white-space: nowrap;
