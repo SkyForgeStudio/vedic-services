@@ -26,25 +26,27 @@ A responsive frontend landing page inspired by the Astro Arun Pandit website. Th
 - Code Review
 - UI Consistency & Bug Fixes
 - Deployment
+- Responsive Navbar UI
+- Hero Section UI
 - Kundli Calculator UI
 - MatchMaking Calculator UI
-
-### Santunu Kirtanya
-
-- Our Services Section UI
+- Footer Section UI
 
 ### Indranil Chatterjee
 
 - Free Calculator Listing Section UI
 - Explore Courses Section UI
 - Animations In Course Section
-- Online Gems Section UI
-- Contact Section UI
+- Footer Section UI
 
 ### Ratul Majumder
 
 - Contact Section
 - FAQ Section UI
+
+### Santunu Kirtanya
+
+- Our Services Section UI
 
 ## Status
 
