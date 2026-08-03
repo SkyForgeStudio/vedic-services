@@ -1,3 +1,112 @@
+
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        inset: 0;
+        background: #2b1a10;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.35s ease;
+        z-index: 1200;
+        padding: 20px 24px;
+        overflow-y: auto;
+        gap: 0;
+    }
+
+    .nav-menu.open {
+        transform: translateX(0);
+    }
+
+    .overlay-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .overlay-header .logo img {
+        width: 34px;
+        margin-right: 0;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.6rem;
+        cursor: pointer;
+        padding: 4px 8px;
+    }
+
+    .nav-links {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-links a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 4px;
+        font-size: 1rem;
+    }
+
+    .caret {
+        display: inline-block;
+        font-size: 0.75rem;
+        transition: transform 0.25s ease;
+    }
+
+    .overlay-actions {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 20px;
+    }
+
+    .login-btn {
+        width: 100%;
+        background: #fff;
+        color: #2f2414;
+        border-radius: 6px;
+        padding: 14px;
+    }
+
+    .contact-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 14px;
+        border-radius: 6px;
+        background: transparent;
+        color: #fff;
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+
+
+
 /* Our Services section */
 @media (max-width: 768px) {
     .services-grid {
@@ -19,7 +128,6 @@
 /* kundli-calculator and matchmaking section */
 
 
-/* Large Tablets (1024px) */
 
 @media (max-width: 1024px) {
     .container {
@@ -50,11 +158,6 @@
 @media (max-width: 768px) {
     .kundli-section {
         padding: 60px 0;
-    }
-
-    .notched-card,
-    .notched-card-body {
-        clip-path: none;
     }
 
     .kunldi-icon-text {
@@ -121,8 +224,6 @@
     .kundli-form-area {
         padding: 25px;
     }
-
-    .notched-card {}
 
     .kundli-title {
         font-size: 24px;

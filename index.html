@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/kundli-calculator.css" />
     <link rel="stylesheet" href="./css/free-calculators.css" />
     <link rel="stylesheet" href="./css/matchmaking-calculator.css" />
@@ -48,9 +49,49 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
 
-    <!-- Header -->
+    <!-- Navbar -->
+
+  <section class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="logo">
+          <img src="./assets/logo/logo.png" alt="Astro Arun Pandit Logo" />
+          Vedic Service
+        </a>
+ 
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+ 
+        <div class="nav-menu" id="navMenu">
+          <div class="overlay-header">
+            <a href="#" class="logo">
+              <img src="./assets/logo/logo.png" alt="" />
+            </a>
+            <button class="close-btn" id="closeBtn" aria-label="Close menu">✕</button>
+          </div>
+ 
+          <nav class="nav-links">
+            <ul>
+              <li><a href="#">Reports <span class="caret">▾</span></a></li>
+              <li><a href="#">Consultation <span class="caret">▾</span></a></li>
+              <li><a href="#">Horoscopes <span class="caret">▾</span></a></li>
+              <li><a href="#">Free Calculator <span class="caret">▾</span></a></li>
+              <li><a href="#">Poojan <span class="caret">▾</span></a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">About Us <span class="caret">▾</span></a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+ 
+          <div class="overlay-actions">
+            <a href="#" class="login-btn">Login</a>
+            <a href="#" class="contact-btn">Contact us</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
     <body>
       <!-- Hero -->
+       
       <main class="page-content">
         <!-- Our Services -->
         <section class="our-service-section">
@@ -864,7 +905,7 @@
                           />
                         </div>
 
-                       <div class="input-group">
+                        <div class="input-group">
                           <label for="phone" class="form-label">Phone</label>
 
                           <input
@@ -1113,6 +1154,7 @@
 
         <!-- Footer -->
         <script src="./js/main.js"></script>
+        <script src="./js/navbar.js"></script>
         <script src="./js/services.js"></script>
         <script src="./js/course-animation.js"></script>
         <script src="./js/animation.js"></script>
