@@ -19,7 +19,7 @@
 .hero {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 520px;
     background: var(--bg-gradient);
     color: var(--text-light);
     font-family: var(--font-body);
@@ -45,7 +45,7 @@
 .hero-slider {
     position: relative;
     width: 100%;
-    min-height: auto;
+    min-height: 520px;
     display: flex;
     align-items: center;
 }
@@ -110,6 +110,7 @@
 
 .hero-content p {
     font-family: var(--font-body);
+    font-weight:600;
     font-size: 1.2rem;
     line-height: 1.6;
     opacity: 0.9;
