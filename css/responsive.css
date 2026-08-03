@@ -480,6 +480,10 @@
         align-items: center;
     }
 
+    .image-wrapper {
+        max-width: 320px;
+    }
+
     .hero-tag {
         align-self: center;
     }
