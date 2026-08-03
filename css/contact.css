@@ -130,6 +130,7 @@ span[about="title"] {
 }
 
 .consultation .info-title {
+    font-family:var(--font-body);
     font-weight: 700;
     font-size: 1.1rem;
     color: var(--brand-brown);
@@ -137,6 +138,7 @@ span[about="title"] {
 }
 
 .consultation .info-desc {
+    font-weight:600;
     font-size: 0.9rem;
     color: var(--brand-brown-muted);
 }
