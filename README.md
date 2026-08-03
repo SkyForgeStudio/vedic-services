@@ -1,13 +1,51 @@
 # Vedic Services
 
+A responsive frontend landing page inspired by the Astro Arun Pandit website. This project was developed as a team project using HTML, CSS, and JavaScript.
+
 ## Tech Stack
-- HTML
-- CSS
+
+- HTML5
+- CSS3
 - JavaScript
 
-## Team
+## Project Scope
 
-- Dipro Paul — Project Lead, Integration, Code Review, Deployment, Kundli Calculator & MatchMaking
-- Santunu Kirtanya — Navbar(Responsive & Default) & Hero & Our Services (Section)
-- Indranil Chaterjee — Free Calculator Listing & Explore Courses and Online Gems Selling  & Contact(Section)
-- Ratul Majumder — Testimonials & Content(Video Listing) & Blogs(Blog Showcasing) & FAQ & Footer(section)
+- Responsive landing page UI
+- Static frontend design
+- Responsive layouts
+- Animations
+- Frontend integration and deployment
+
+> **Note:** This project is a frontend UI implementation only. Forms, calculators, navigation links, and other interactive elements are for demonstration purposes and are not connected to a backend.
+
+## Team Contributions
+
+### Dipro Paul
+
+- Project Structure & Integration
+- Code Review
+- UI Consistency & Bug Fixes
+- Deployment
+- Kundli Calculator UI
+- MatchMaking Calculator UI
+
+### Santunu Kirtanya
+
+- Our Services Section UI
+
+### Indranil Chatterjee
+
+- Free Calculator Listing Section UI
+- Explore Courses Section UI
+- Animations In Course Section
+- Online Gems Section UI
+- Contact Section UI
+
+### Ratul Majumder
+
+- Contact Section
+- FAQ Section UI
+
+## Status
+
+✅ Frontend UI Completed
