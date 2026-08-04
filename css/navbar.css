@@ -14,34 +14,6 @@
     font-display: swap;
 }
 
-/* Centralized Global Theme System */
-:root {
-    /* Brand & Accent Colors */
-    --primary-color: #d97706;
-    /* Solar Gold */
-    --primary-hover: #b45309;
-    /* Deep Amber Hover */
-    --primary-dark: #0f172a;
-    /* Midnight Slate */
-    --text-heading: #1e1b4b;
-    /* Deep Indigo */
-    --text-body: #475569;
-    /* Muted Slate Body */
-    --text-light: #f8fafc;
-    /* Celestial White */
-
-    /* Navbar Surface */
-    --navbar-bg: #804020;
-    /* Deep Warm Brand Brown */
-    --navbar-text: #ffffff;
-    --navbar-hover-accent: #f59e0b;
-    --button-bg: #f59e0b;
-    --button-text: #0f172a;
-
-    /* Typography Systems */
-    --font-heading: 'FHTotalDisplay', sans-serif;
-    --font-body: 'Be Vietnam Pro', sans-serif;
-}
 
 * {
     box-sizing: border-box;

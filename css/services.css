@@ -14,40 +14,6 @@
     font-display: swap;
 }
 
-/* Centralized Global Theme System */
-:root {
-    /* Brand & Accent Colors */
-    --primary-color: #d97706;
-    /* Solar Gold */
-    --primary-hover: #b45309;
-    /* Deep Amber Hover */
-    --primary-dark: #0f172a;
-    /* Midnight Slate */
-    --text-heading: #1e1b4b;
-    /* Deep Indigo */
-    --text-body: #475569;
-    /* Muted Slate Body */
-    --text-light: #f8fafc;
-    /* Celestial White */
-
-    /* Cards & Container Backgrounds */
-    --card-bg: #f8fafc;
-    /* Off-white Card Surface */
-    --card-border: rgba(217, 119, 6, 0.3);
-    /* Soft Gold Border */
-    --card-hover-shadow: rgba(217, 119, 6, 0.15);
-
-    /* Elements & Controls */
-    --tab-inactive: #64748b;
-    --icon-bg: #ffffff;
-    --badge-bg: rgba(217, 119, 6, 0.12);
-    --badge-text: #b45309;
-    --button-border: #0f172a;
-
-    /* Typography Systems */
-    --font-heading: 'FHTotalDisplay', sans-serif;
-    --font-body: 'Be Vietnam Pro', sans-serif;
-}
 
 .services-container {
     max-width: 1100px;

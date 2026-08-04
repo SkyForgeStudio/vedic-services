@@ -14,25 +14,6 @@
     font-display: swap;
 }
 
-
-:root {
-    --primary-color: #d97706;
-    --primary-hover: #b45309;
-    --primary-dark: #0f172a;
-    --text-heading: #1e1b4b;
-    --text-body: #475569;
-    --text-light: #f8fafc;
-    --text-muted-light: #cbd5e1;
-    --footer-bg: #0f172a;
-    --footer-border: rgba(248, 250, 252, 0.12);
-    --input-bg: #ffffff;
-    --social-bg: rgba(248, 250, 252, 0.08);
-    --whatsapp-bg: #25d366;
-    --button-shadow: rgba(0, 0, 0, 0.25);
-    --font-heading: 'FHTotalDisplay', sans-serif;
-    --font-body: 'Be Vietnam Pro', sans-serif;
-}
-
 .footer {
     background: var(--footer-bg);
     color: var(--text-light);

@@ -1,91 +1,125 @@
-@font-face {
-    font-family: 'FHTotalDisplay';
-    src: url("../assets/fonts/FHTotalDisplay-Test-Regular-BF6514dd5b34b98.woff") format('woff');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Be Vietnam Pro';
-    src: url('https://fonts.gstatic.com/s/bevietnampro/v12/QdVNSTAyLFyeg_IDWvOJmVES_HRUNXgSYA.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
 :root {
-    /* ----------------------------------------------------------------------
-       1. COLOR SYSTEM
-       ---------------------------------------------------------------------- */
-        --bg-gradient: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
-    /* Primary Brand & Cosmic Gold Palette */
-    --color-primary: #d97706;                 
-    --color-primary-hover: #b45309;          
-    --color-primary-dark: #0f172a;            
-    --color-accent-gold: #eab308;             
-    
-    /* Legacy / Semantic Brand Browns */
-    --color-text-heading: #5a2414;            
-    --color-text-indigo: #1e1b4b;             
-    --color-brand-brown: #804020;             
-    
-    /* Text Color Tokens */
-    --color-text-main: #1a1a1a;               
-    --color-text-body: #475569;             
-    --color-text-subtitle: #5e4635;           
-    --color-text-muted: #64748b;            
-    --color-text-muted-light: #cbd5e1;       
-    --color-text-light: #f8fafc;             
-    --color-white: #ffffff;                   
+    /*  Fonts */
 
-    /* Surface & Background Systems */
-    --color-bg-page: #fdf6ec;                 
-    --color-bg-card: #f8fafc;                 
-    --color-bg-card-alt: #fff7ed;             
-    --color-bg-card-panchang: rgba(255, 255, 255, 0.6);
-    --color-bg-panchang-section: #fff1da;     
-    --color-bg-footer: #0f172a;               
-    --color-bg-icon: #fff3e0;                 
-    --color-badge-bg: rgba(217, 119, 6, 0.15); 
-
-    /* Borders & Dividers */
-    --color-border-card: #d9a054;             
-    --color-border-subtle: #e0e0e0;        
-    --color-border-control: #cccccc;          
-    --color-border-btn: #6a4633;           
-    --color-footer-border: rgba(248, 250, 252, 0.12);
-
-    /* Interactive Elements & State Colors */
-    --color-success: #15803d;                 
-    --color-btn-refresh: #f3e0be;
-    --color-btn-refresh-hover: #ebd09e;
-    --color-btn-more: rgba(230, 137, 61, 0.51);
-    --color-btn-more-hover: rgba(240, 152, 52, 0.52);
-    --color-social-bg: rgba(248, 250, 252, 0.08);
-    --color-whatsapp-bg: #25d366;
-
-    /* Donut Chart / Data Visualizer Colors */
-    --chart-nighttime: #1d2a44;
-    --chart-daytime: #d97706;
-    --chart-rahukaal: #9a3412;
-    --chart-abhijit: #854d0e;
-    --chart-center-bg: #fdf8ed;
-
-    /* Gradients */
-    --gradient-primary-btn: linear-gradient(135deg, #d97706 0%, #b45309 100%);
-
-    /* ----------------------------------------------------------------------
-       2. TYPOGRAPHY & SHAPES
-       ---------------------------------------------------------------------- */
-    --font-heading: 'FHTotalDisplay', serif;
+    --font-heading: 'FHTotalDisplay', sans-serif;
     --font-body: 'Be Vietnam Pro', sans-serif;
 
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 12px;
-    --radius-full: 50%;
+    /* Brand & Palette Colors */
 
-    --shadow-card: 0 12px 25px rgba(0, 0, 0, 0.08);
-    --shadow-float: 0 8px 20px rgba(0, 0, 0, 0.25);
+    --primary-color: #C6922E;
+    --primary-hover: #A8741F;
+    --primary-dark: #111C3A;
+    --color-primary: #C6922E;
+    --color-primary-hover: #A8741F;
+    --color-success: #2E7D32;
+
+    --text-heading: #18274A;
+    --text-subtitle: #5F4B32;
+    --text-body: #5A6474;
+    --text-light: #FDFCF8;
+    --text-dark: #111827;
+    --text-muted-light: #D8DEE9;
+    --footer-text: #AEB8C7;
+
+    /* Surfaces, Cards & Backgrounds */
+
+    --bg-page: #FDFCF9;
+    --bg-cream: #F8F4EC;
+    --bg-light: #FFF9EF;
+    --bg-icon: #FFF3DE;
+    --section-bg: #F6F4EF;
+    --color-bg-section: #FFF6E6;
+
+    /* Card Backgrounds */
+
+    --card-bg: #FFFFFF;
+    --bg-card: #FFFAF3;
+    --color-bg-card: rgba(255, 255, 255, 0.75);
+    --icon-bg: #FFFFFF;
+
+    /* Gradients */
+
+    --bg-gradient-start: #1A2144;
+    --bg-gradient-end: #0C1530;
+    --bg-gradient: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    --color-btn-bg: linear-gradient(135deg, #C6922E 0%, #A8741F 100%);
+
+    /* Specialized Backgrounds */
+
+    --navbar-bg: #6D3418;
+    --footer-bg: #0C1530;
+    --input-bg: #FFFFFF;
+    --social-bg: rgba(255, 255, 255, 0.08);
+    --whatsapp-bg: #25D366;
+
+    /* 4. Borders & Dividers */
+
+    --card-border: rgba(198, 146, 46, .28);
+    --color-border-card: #E4D9C7;
+    --border-card: #C6922E;
+    --border-gold: #D8A64B;
+    --border-color: rgba(198, 146, 46, .35);
+    --border-light: rgba(255, 255, 255, .25);
+    --footer-border: rgba(255, 255, 255, .10);
+
+    /* Inputs & Buttons Borders */
+
+    --input-border: rgba(17, 28, 58, .15);
+    --color-border-control: #D2D6DC;
+    --input-focus: #C6922E;
+    --border-btn: #6D3418;
+    --button-border: #18274A;
+
+    /* Interactive Components & States */
+
+    /* Badges */
+
+    --badge-bg: rgba(198, 146, 46, .12);
+    --color-badge-bg: rgba(198, 146, 46, .16);
+    --badge-text: #A8741F;
+
+    /* Navbar & Buttons */
+
+    --navbar-text: #FFFFFF;
+    --navbar-hover-accent: #D8A64B;
+    --button-bg: #C6922E;
+    --button-text: #FFFFFF;
+    --tab-inactive: #6B7280;
+
+    /* Action Buttons */
+
+    --color-btn-refresh: #F7E8C8;
+    --color-btn-refresh-hover: #EFD7A5;
+    --color-btn-more: rgba(198, 146, 46, .25);
+    --color-btn-more-hover: rgba(198, 146, 46, .4);
+
+    /* Dropdowns */
+
+    --dropdown-bg: #FFFFFF;
+    --dropdown-border: rgba(17, 28, 58, .12);
+    --dropdown-hover-bg: #18274A;
+    --dropdown-hover-text: #FFFFFF;
+
+    /* Glassmorphic & Overlays */
+
+    --overlay-glass: rgba(255, 255, 255, .08);
+    --overlay-arrow: rgba(17, 28, 58, .65);
+    --overlay-arrow-hover: rgba(198, 146, 46, .85);
+
+    /* Shadows & Animations */
+
+    --button-shadow: rgba(198, 146, 46, .35);
+    --button-shadow-hover: rgba(198, 146, 46, .5);
+    --icon-box-shadow: rgba(24, 39, 74, .06);
+    --card-hover-shadow: rgba(198, 146, 46, .18);
+    --drop-shadow-color: rgba(0, 0, 0, .35);
+    --transition-speed: .5s;
+
+    /* Chart & Visualizer Tokens */
+
+    --color-chart-center: #FFF9F0;
+    --chart-nighttime: #18274A;
+    --chart-daytime: #C6922E;
+    --chart-rahukaal: #7A1F1F;
+    --chart-abhijit: #8A6422;
 }

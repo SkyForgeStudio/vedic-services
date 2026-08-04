@@ -1,38 +1,4 @@
-:root {
-    /* Color Palette */
-    --primary-color: #d97706;
-    /* Solar Gold */
-    --primary-hover: #b45309;
-    /* Deep Amber Hover */
-    --primary-dark: #0f172a;
-    /* Midnight Slate */
-    --bg-gradient-start: #1e1b4b;
-    /* Cosmic Indigo */
-    --bg-gradient-end: #0f172a;
-    /* Obsidian Midnight */
-    --text-light: #f8fafc;
-    /* Celestial White */
-    --text-dark: #020617;
-    /* Dark Slate */
 
-    /* UI Highlights & Overlays */
-    --border-color: rgba(217, 119, 6, 0.4);
-    /* Semi-transparent Gold */
-    --border-light: rgba(248, 250, 252, 0.3);
-    /* Semi-transparent White */
-    --overlay-glass: rgba(255, 255, 255, 0.08);
-    --overlay-arrow: rgba(15, 23, 42, 0.6);
-    --overlay-arrow-hover: rgba(217, 119, 6, 0.8);
-    --drop-shadow-color: rgba(0, 0, 0, 0.4);
-
-    /* System Configurations */
-    --transition-speed: 0.5s;
-    --font-heading: 'FHTotalDisplay', sans-serif;
-    --font-body: 'Be Vietnam Pro', sans-serif;
-
-    /* Computed Gradients */
-    --bg-gradient: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
-}
 
 * {
     box-sizing: border-box;

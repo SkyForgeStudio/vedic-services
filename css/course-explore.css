@@ -15,30 +15,6 @@
 }
 
 
-:root {
-    --primary-color: #d97706;
-    --primary-hover: #b45309;
-    --primary-dark: #0f172a;
-    --text-heading: #1e1b4b;
-    --text-body: #475569;
-    --text-light: #f8fafc;
-
-    --section-bg: #faf8f5;
-
-    --card-bg: #f8fafc;
-
-    --card-border: rgba(217, 119, 6, 0.3);
-    --card-hover-shadow: rgba(0, 0, 0, 0.12);
-
-    --badge-bg: rgba(217, 119, 6, 0.12);
-    --badge-text: #b45309;
-    --button-border: #1e1b4b;
-    --footer-text: #64748b;
-
-    --font-heading: 'FHTotalDisplay', sans-serif;
-    --font-body: 'Be Vietnam Pro', sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;

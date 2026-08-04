@@ -14,48 +14,6 @@
    font-display: swap;
 }
 
-/* Centralized Global Theme System */
-:root {
-   /* Brand & Accent Colors */
-   --primary-color: #d97706;
-   /* Solar Gold */
-   --primary-hover: #b45309;
-   /* Deep Amber Hover */
-   --primary-dark: #0f172a;
-   /* Midnight Slate */
-   --text-heading: #1e1b4b;
-   /* Deep Indigo */
-   --text-body: #475569;
-   /* Muted Slate Body */
-   --text-light: #f8fafc;
-   /* Celestial White */
-
-   /* Cards, Forms & Container Backgrounds */
-   --card-bg: #ffffff;
-   /* Form Card Surface */
-   --card-border: rgba(217, 119, 6, 0.4);
-   /* Soft Gold Border */
-   --input-border: rgba(15, 23, 42, 0.2);
-   /* Muted Input Bottom Border */
-   --input-focus: #d97706;
-   /* Gold Focus Highlight */
-
-   /* Interactive & Dropdown States */
-   --dropdown-bg: #ffffff;
-   --dropdown-border: rgba(15, 23, 42, 0.15);
-   --dropdown-hover-bg: #1e1b4b;
-   /* Indigo Active Hover */
-   --dropdown-hover-text: #f8fafc;
-   --button-shadow: rgba(0, 0, 0, 0.2);
-
-   /* Typography Systems */
-   --font-heading: 'FHTotalDisplay', sans-serif;
-   --font-body: 'Be Vietnam Pro', sans-serif;
-
-   /* Computed Gradients */
-   --color-btn-bg: linear-gradient(135deg, #d97706 0%, #b45309 100%);
-}
-
 *,
 *::before,
 *::after {

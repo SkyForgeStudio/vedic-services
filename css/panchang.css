@@ -14,45 +14,6 @@
     font-display: swap;
 }
 
-/* Centralized Global Theme System */
-:root {
-    /* Brand & Accent Colors */
-    --color-primary: #d97706;
-    /* Solar Gold */
-    --color-primary-hover: #b45309;
-    /* Deep Amber Hover */
-    --color-success: #15803d;
-    /* Emerald Success */
-    --text-heading: #1e1b4b;
-    /* Deep Indigo */
-    --text-body: #1a1a1a;
-    /* Dark Neutral Text */
-
-    /* Section & Component Surfaces */
-    --color-bg-section: #fff1da;
-    /* Warm Panchang Surface */
-    --color-bg-card: rgba(255, 255, 255, 0.6);
-    --color-border-card: #e0e0e0;
-    --color-badge-bg: rgba(217, 119, 6, 0.15);
-    --color-chart-center: #fdf8ed;
-
-    /* Interactive Controls */
-    --color-border-control: #cccccc;
-    --color-btn-refresh: #f3e0be;
-    --color-btn-refresh-hover: #ebd09e;
-    --color-btn-more: rgba(230, 137, 61, 0.51);
-    --color-btn-more-hover: rgba(240, 152, 52, 0.52);
-
-    /* Chart Data Visualizer Colors */
-    --chart-nighttime: #1d2a44;
-    --chart-daytime: #d97706;
-    --chart-rahukaal: #9a3412;
-    --chart-abhijit: #854d0e;
-
-    /* Typography Systems */
-    --font-heading: 'FHTotalDisplay', sans-serif;
-    --font-body: 'Be Vietnam Pro', sans-serif;
-}
 
 * {
     box-sizing: border-box;
